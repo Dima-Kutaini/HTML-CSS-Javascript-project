@@ -1,0 +1,195 @@
+/**
+ * Default styles
+ *
+ * @format
+ */
+/* select all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* End of  Default styles  */
+/* Container */
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.rectangle {
+  width: 70rem;
+  height: 40rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+}
+.rectangle-1 {
+  top: 48%;
+  left: -21%;
+  transform: rotateZ(20deg);
+}
+.rectangle-2 {
+  top: -8%;
+  right: -10%;
+  transform: rotateZ(60deg);
+}
+
+/* navigation */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+}
+.designer {
+  position: absolute;
+  top: 2rem;
+  left: 30rem;
+  display: flex;
+  align-items: center;
+}
+.designer div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.designer img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.designer div span:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.designer div span:nth-child(2) {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+  letter-spacing: 0.2rem;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 3rem;
+  right: 30rem;
+  width: 5rem;
+  height: 3rem;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.menu-icon:hover {
+  transform: scaleY(1.4);
+}
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+}
+
+.navigation {
+  width: 100%;
+  height: 100vh;
+  background-color: #121212;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.navigation.navigate {
+  opacity: 1;
+  visibility: visible;
+}
+.nav-left {
+  width: 30%;
+  height: 100%;
+}
+.nav-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.nav-right {
+  width: 70%;
+  height: 100%;
+}
+.x-btn {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  cursor: pointer;
+}
+.x-line {
+  width: 4rem;
+  height: 0.2rem;
+  background-color:#fff;
+}
+.x-line-1 {
+  transform: rotateZ(-45deg);
+}
+.x-line-2 {
+  transform: rotateZ(45deg) translate(-0.2rem, -0.1rem);
+}
+
+.nav-right h1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.nav-list a{
+  font-family: 'Kanit', sans-serif;
+  font-size: 4rem;
+  color: #ccc;
+  margin: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.nav-list a:nth-child(1) {
+  color: #c03740;
+}
+.nav-list a:hover{
+color: #c03740;
+}
+/* end of navigation  */
+
+/* end of container */
