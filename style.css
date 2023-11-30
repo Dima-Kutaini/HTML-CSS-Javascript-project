@@ -21,7 +21,7 @@ html {
 /* Container */
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #121212;
 }
 
@@ -49,6 +49,7 @@ html {
   left: 0;
   width: 100%;
   height: 10rem;
+  z-index:100 ;
 }
 .designer {
   position: absolute;
@@ -269,5 +270,129 @@ html {
 }
 
 /* End of landing */
+
+
+/* About  */
+
+.about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem ;
+
+}
+.about-left{
+width: 40%;
+position: relative;
+}
+.about-left img{
+  width: 33rem;
+  height: 55rem;
+  object-fit: cover;
+  position: absolute;
+  top: -10rem;
+  right: 0;
+opacity:0 ;
+visibility: hidden;
+transform: translateY(20rem);
+transition: all 1s .5s;
+
+}
+.change .about-left img{
+  opacity:0.8 ;
+visibility: visible;
+transform: translateY(0);
+
+}
+.about-right{
+  width: 60%;
+  position: relative;
+  opacity:0 ;
+visibility: hidden;
+transform: translateY(20rem);
+transition: all 1.5s .5s;
+
+}
+.change .about-right{
+  opacity:0.8 ;
+visibility: visible;
+transform: translateY(0);
+
+}
+.about-right h1{
+  font-family: "kanit", sans-serif;
+  font-size: 20rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  color: #222;
+  position: absolute;
+top: -20rem;
+left: 15rem;
+
+}
+
+.about-right h3{
+  font-family:"kanit", sans-serif ;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+  position: absolute;
+  top: -7rem;
+  left: 25rem;
+}
+.info{
+  position: absolute;
+  top: 5rem;
+  left: 25rem;
+}
+.info p{
+  font-family:"kanit", sans-serif;
+  font-size: 1.8rem;
+  width: 45rem;
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 5rem;
+
+}
+.social-media{
+  display: flex;
+  margin-bottom: 5rem;
+
+}
+.social-media i{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  color:#c03740;
+  cursor: pointer;
+
+}
+.info h4{
+  font-size:1.8rem ;
+  color: #fff;
+}
+.info span{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #777;
+  display: block;
+  margin: 2rem 0;
+
+}
+.info a{
+  font-family:"kanit", sans-serif ;
+  color: #c03740;
+}
+
+
+/* End of about  */
 
 /* end of container */
