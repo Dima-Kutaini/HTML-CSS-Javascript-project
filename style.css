@@ -49,7 +49,7 @@ html {
   left: 0;
   width: 100%;
   height: 10rem;
-  z-index:100 ;
+  z-index: 100;
 }
 .designer {
   position: absolute;
@@ -266,75 +266,67 @@ html {
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.5rem;
-
 }
 
 /* End of landing */
 
-
 /* About  */
 
-.about{
+.about {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 10rem ;
-
+  padding-top: 10rem;
 }
-.about-left{
-width: 40%;
-position: relative;
+.about-left {
+  width: 40%;
+  position: relative;
 }
-.about-left img{
+.about-left img {
   width: 33rem;
   height: 55rem;
   object-fit: cover;
   position: absolute;
   top: -10rem;
   right: 0;
-opacity:0 ;
-visibility: hidden;
-transform: translateY(20rem);
-transition: all 1s .5s;
-
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20rem);
+  transition: all 1s 0.5s;
 }
-.change .about-left img{
-  opacity:0.8 ;
-visibility: visible;
-transform: translateY(0);
-
+.change .about-left img {
+  opacity: 0.8;
+  visibility: visible;
+  transform: translateY(0);
 }
-.about-right{
+.about-right {
   width: 60%;
   position: relative;
-  opacity:0 ;
-visibility: hidden;
-transform: translateY(20rem);
-transition: all 1.5s .5s;
-
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20rem);
+  transition: all 1.5s 0.5s;
 }
-.change .about-right{
-  opacity:0.8 ;
-visibility: visible;
-transform: translateY(0);
-
+.change .about-right {
+  opacity: 0.8;
+  visibility: visible;
+  transform: translateY(0);
 }
-.about-right h1{
-  font-family: "kanit", sans-serif;
+.about-right h1 {
+  font-family: 'kanit', sans-serif;
   font-size: 20rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   color: #222;
   position: absolute;
-top: -20rem;
-left: 15rem;
-
+  top: -20rem;
+  left: 15rem;
 }
 
-.about-right h3{
-  font-family:"kanit", sans-serif ;
+.about-right h3 {
+  font-family: 'kanit', sans-serif;
   font-size: 4rem;
   font-weight: 300;
   color: #fff;
@@ -342,26 +334,24 @@ left: 15rem;
   top: -7rem;
   left: 25rem;
 }
-.info{
+.info {
   position: absolute;
   top: 5rem;
   left: 25rem;
 }
-.info p{
-  font-family:"kanit", sans-serif;
+.info p {
+  font-family: 'kanit', sans-serif;
   font-size: 1.8rem;
   width: 45rem;
   color: #777;
   line-height: 1.8;
   margin-bottom: 5rem;
-
 }
-.social-media{
+.social-media {
   display: flex;
   margin-bottom: 5rem;
-
 }
-.social-media i{
+.social-media i {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
@@ -371,28 +361,104 @@ left: 15rem;
   align-items: center;
   font-size: 2.5rem;
   margin-right: 2rem;
-  color:#c03740;
+  color: #c03740;
   cursor: pointer;
-
 }
-.info h4{
-  font-size:1.8rem ;
+.info h4 {
+  font-size: 1.8rem;
   color: #fff;
 }
-.info span{
+.info span {
   font-size: 1.6rem;
   font-weight: bold;
   color: #777;
   display: block;
   margin: 2rem 0;
-
 }
-.info a{
-  font-family:"kanit", sans-serif ;
+.info a {
+  font-family: 'kanit', sans-serif;
   color: #c03740;
 }
 
-
 /* End of about  */
+
+/* services */
+
+.services {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-header {
+  text-align: center;
+  /* opacity: 0; 
+   visibility: hidden;
+  transform: translateY(5rem); */
+  transform: all 1s;
+}
+
+/* .change.services-header{
+  opacity: 1;
+  visibility: visible;
+  transition: translateY(0);
+}  */
+.services-header h3{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #777;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.services-header h1 {
+  font-size: 5rem;
+  color: #fff;
+  letter-spacing: 0.3rem;
+  margin-bottom: 12rem;
+}
+.services-list {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.list-item {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ /* opacity: 0;
+  visibility: hidden;*/
+  transition: translateY(5rem);  
+}
+/* .list-item:nth-child(1) {
+  transition: all 1s 0.5s;
+}
+
+.list-item:nth-child(2) {
+  transition: all 1s 0.7s;
+}
+.list-item:nth-child(3) {
+  transition: all 1s 0.9s;
+} */
+/* .change.list-item{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+} */
+.list-item i {
+  font-size: 4rem;
+  color: #c03740;
+  margin-bottom: 3rem;
+}
+.list-item span {
+  font-family: 'kanit', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0.7rem 0;
+}
+
+/* End of services */
 
 /* end of container */
