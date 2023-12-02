@@ -48,15 +48,43 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// const startCount = (el) => {
+//   let max = el.dataset.val;
+//   let count = setInterval(() => {
+//     el.textContent++;
+//     if (el.textContent === max) {
+//       clearInterval(count);
+//     }
+//   }, 5);
+// };
+
+
+
+// const startCount = (el) => {
+//   let max = parseInt(el.dataset.val, 10);
+//   let current = 0;
+
+//   let count = setInterval(() => {
+//     current++;
+//     el.textContent = current;
+
+//     if (current >= max) {
+//       el.textContent = max; // Set the final value to avoid exceeding data-val
+//       clearInterval(count);
+//     }
+//   }, 5);
+// };
 const startCount = (el) => {
-  let max = el.dataset.val;
+  let max = parseInt(el.dataset.val, 10);
+  let current = 0;
+
   let count = setInterval(() => {
-    el.textContent++;
-    if (el.textContent === max) {
+    current += Math.ceil((max - current) / 10); // Smooth increment
+    el.textContent = current;
+
+    if (current >= max) {
+      el.textContent = max; // Set the final value
       clearInterval(count);
     }
-  }, 1000);
+  }, 5); // Adjust the interval as needed for smoothness
 };
-
-
-

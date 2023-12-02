@@ -42,6 +42,7 @@ html {
   transform: rotateZ(60deg);
 }
 
+/* end of container */
 /* navigation */
 .navbar {
   position: absolute;
@@ -651,4 +652,216 @@ transform: translate(-50%, -50%);
 }
 
  /* End of data */
-/* end of container */
+
+/* footer */
+
+footer{
+  width: 100%; 
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+  background-color: #121212;
+}
+.footer-social-media{
+  display: flex;
+  margin-bottom: 3rem;
+}
+.footer-social-media i{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #777;
+}
+footer h1{
+  font-size: 4rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+footer a{
+  font-size: 2rem;
+  color: #ddd;
+  margin-bottom: 10rem;
+}
+
+.copyright{
+  font-size: 1.6rem;
+  color: #ccc;
+}
+.copyright span{
+  font-family: "Kanit", sans-serif;
+  font-size: 2rem;
+color: #c03740;
+}
+/* End of footer */
+
+/* Responsive */
+@media (max-width:1500px) {
+  html{
+    font-size: 55%;
+  }
+  .rectangle-2{
+    left: -15%;
+  }
+}
+
+@media (max-width:1300px) {
+  html{
+    font-size: 50%;
+  }
+  .about-left{
+    width: 35%;
+  }
+.about-right{
+  width:65% ;
+}
+.works{
+  width: 90%;
+}
+.data-list{
+  width: 70%;
+}
+
+}
+@media (max-width:1100px){
+  html{
+    font-size: 45%;
+  }
+  .about-right h1{
+    font-size: 15rem;
+    top: -18rem;
+  }
+  .about-right h1{
+    font-size: 3.5rem;
+    top: -9rem;
+  }
+  .data-list span:nth-child(2){
+    font-size: 16rem;
+
+  }
+}
+@media (max-width:900px){
+
+.rectangle-1{
+  left: -40rem;
+}
+.rectangle-2{
+  left: 15rem;
+}
+.designer{
+  left: 15rem;
+}
+.menu-icon{
+  right: 15rem;
+}
+.nav-left{
+  width: 50%;
+}
+.nav-right{
+  width: 50%;
+  position: relative;
+
+}
+.nav-right h1{
+transform: rotateY(-50%);
+left: 0rem;
+width: 100%;
+text-align: center;
+}
+.nav-list{
+  transform: rotateX(-50%);
+  text-align: center;
+}
+.about-left{
+  display: none;
+
+}
+.about-right h1{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about-right h3{
+  left: 35%;
+}
+.info{
+  left: 20%;
+  transform: rotateX(-50%);
+}
+.services-list{
+  width: 90%;
+}
+.works{
+  width: 100%;
+}
+.work-info{
+  width: 50%;
+}
+
+
+}
+@media (max-width:700px){
+ html{
+  font-size: 40%;
+ }
+.designer{
+  left: 40%;
+}
+.menu-icon{
+  right: 8rem;
+}
+.heading-slide h1{
+  font-size: 5rem;
+}
+.services-list{
+  flex-direction: column;
+  align-items: center;
+}
+.list-item{
+  margin-bottom: 5rem;
+}
+.works{
+  width: 90%;
+}
+}
+@media (max-width:500px){
+.rectangle-1{
+  left: -70%;
+}
+.rectangle-2{
+  right: -50%;
+}
+.nav-left{
+  display: none;
+}
+.nav-right{
+  width: 100%;
+}
+.info p{
+
+left: 12rem;
+}
+.work{
+  align-items: center;
+}
+.work img{
+  width: 60%;
+}
+.work-info{
+  display: none;
+}
+.data-item span:nth-child(2){
+  font-size: 12rem;
+
+}
+
+}
+
+/* End of respinsive  */
