@@ -20,25 +20,25 @@ window.addEventListener('scroll', () => {
   const data = document.querySelector('.data');
   const myData = document.querySelectorAll('.num');
 
-  if (window.scrollY >= 200) {
+  if (window.pageYOffset >= 200) {
     about.classList.add('change');
   } else {
     about.classList.remove('change');
   }
 
-  if (window.scrollY >= about.offsetTop + 200) {
+  if (window.pageYOffset >= about.offsetTop + 200) {
     services.classList.add('change');
   } else {
     services.classList.remove('change');
 
-    if (window.scrollY >= services.offsetTop ) {
+    if (window.pageYOffset >= services.offsetTop ) {
       portfolio.classList.add('change');
     } else {
       portfolio.classList.remove('change');
     }
   }
 
-  if (window.scrollY >= data.offsetTop - 300) {
+  if (window.pageYOffset >= data.offsetTop - 300) {
     if (start) {
       myData.forEach((num) => {
         startCount(num);
